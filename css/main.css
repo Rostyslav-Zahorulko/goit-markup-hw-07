@@ -98,20 +98,12 @@ body {
   margin-left: auto;
 }
 
-.header > .container {
-  display: flex;
-}
-
 .logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
   color: #2196f3;
-}
-
-.header .logo {
-  margin-right: 85px;
 }
 
 .logo-second-part {
@@ -379,6 +371,14 @@ body {
 
 .header.portfolio-header {
   border-bottom: 1px solid #ececec;
+}
+
+.header > .container {
+  display: flex;
+}
+
+.header .logo {
+  margin-right: 85px;
 }
 
 .navigation-menu {
