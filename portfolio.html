@@ -12,7 +12,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
@@ -56,7 +56,7 @@
               href="mailto:info@devstudio.com"
               aria-label="Электронная почта"
             >
-              <svg class="icon-envelope">
+              <svg class="icon-envelope" width="16" height="11.2">
                 <use href="./images/sprite.svg#envelope-icon"></use>
               </svg>
               info@devstudio.com
@@ -69,7 +69,7 @@
               href="tel:+380961111111"
               aria-label="Мобильный телефон"
             >
-              <svg class="icon-smartphone">
+              <svg class="icon-smartphone" width="10" height="14.94">
                 <use href="./images/sprite.svg#smartphone-icon"></use>
               </svg>
               +38 096 111 11 11
@@ -456,10 +456,15 @@
               type="email"
               name="mail"
               placeholder="E-mail"
+              required
             />
-            <button class="subscribe-form-submit-button button" type="submit">
+            <button class="primary-button button" type="submit">
               Подписаться
-              <svg class="subscribe-icon" width="24" height="24">
+              <svg
+                class="subscribe-form-primary-button-icon"
+                width="24"
+                height="24"
+              >
                 <use href="./images/sprite.svg#plane-icon"></use>
               </svg>
             </button>
@@ -468,81 +473,87 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <b class="modal-call">Оставьте свои данные, мы вам перезвоним</b>
-            <form class="feedback-form form">
-              <div class="form-field">
+            <form class="feedback-form">
+              <div class="feedback-form-field">
                 <input
-                  class="form-field-input"
+                  class="feedback-form-field-input"
                   type="text"
                   name="name"
                   id="name"
                   placeholder=" "
                   required
                 />
-                <label class="form-field-label" for="name">Имя</label>
-                <svg class="form-field-icon">
+                <label class="feedback-form-field-label" for="name">Имя</label>
+                <svg class="feedback-form-field-icon">
                   <use href="./images/sprite.svg#icon-name"></use>
                 </svg>
               </div>
-              <div class="form-field">
+              <div class="feedback-form-field">
                 <input
-                  class="form-field-input"
+                  class="feedback-form-field-input"
                   type="tel"
                   name="tel"
                   id="tel"
                   placeholder=" "
                   required
                 />
-                <label class="form-field-label" for="tel">Телефон</label>
-                <svg class="form-field-icon">
+                <label class="feedback-form-field-label" for="tel"
+                  >Телефон</label
+                >
+                <svg class="feedback-form-field-icon">
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
               </div>
-              <div class="form-field">
+              <div class="feedback-form-field">
                 <input
-                  class="form-field-input"
+                  class="feedback-form-field-input"
                   type="email"
                   name="mail"
                   id="mail"
                   placeholder=" "
                   required
                 />
-                <label class="form-field-label" for="mail">Почта</label>
-                <svg class="form-field-icon">
+                <label class="feedback-form-field-label" for="mail"
+                  >Почта</label
+                >
+                <svg class="feedback-form-field-icon">
                   <use href="./images/sprite.svg#icon-email"></use>
                 </svg>
               </div>
-              <div class="form-field textarea">
+              <div class="feedback-form-field textarea">
                 <textarea
-                  class="form-field-textarea"
+                  class="feedback-form-field-textarea"
                   name="comment"
                   id="comment"
                   placeholder=" "
                 ></textarea>
-                <label class="form-field-label" for="comment"
+                <label class="feedback-form-field-label" for="comment"
                   >Комментарий</label
                 >
               </div>
-              <div class="form-field checkbox">
+              <div class="feedback-form-field checkbox">
                 <input
-                  class="checkbox-input"
+                  class="feedback-form-field-checkbox"
                   type="checkbox"
                   name="check"
                   value="Подтверждаю"
                   id="check"
                   required
                 />
-                <label class="checkbox-label" for="check">
-                  <span class="checkbox-label-text"
+                <label class="feedback-form-field-label" for="check">
+                  <span class="feedback-form-field-label-text"
                     >Соглашаюсь с рассылкой и принимаю </span
-                  ><a class="checkbox-label-link" href="">Условия договора</a>
+                  ><a class="feedback-form-field-label-link" href=""
+                    >Условия договора</a
+                  >
                 </label>
               </div>
-              <button class="feedback-form-submit-button button" type="submit">
+              <button class="primary-button button" type="submit">
                 Отправить
               </button>
             </form>
             <button class="modal-close-button" type="button" data-modal-close>
-              <svg class="close-icon">
+              <svg class="modal-close-button-icon">
                 <use href="./images/sprite.svg#icon-close"></use>
               </svg>
             </button>
